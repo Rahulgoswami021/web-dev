@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color-Cyan: hsl(179, 62%, 43%);
+  --primary-color-Bright-Yellow: hsl(71, 73%, 54%);
+  --netural-color-Light-Gray: hsl(203, 44%, 93%);
+  --netural-color-Grayish-Blue: hsl(218, 22%, 67%);
+}
+
+html {
+  font-size: 67%;
+  font-family: Karla, sans-serif;
+}
+
+body {
+  padding: 25px 50px 20px 20px;
+}
+
+main {
+  box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.082),
+    -1px -1px 15px rgba(0, 0, 0, 0.171);
+  width: 700px;
+  margin: auto;
+  margin-top: 30px;
+  padding-top: 30px;
+  background-color: #fff;
+}
+
+.tagLine {
+  color: var(--netural-color-Light-Gray);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.discription {
+  margin: 25px 25px;
+}
+
+.headLine {
+  color: var(--primary-color-Cyan);
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.subHeadLine {
+  color: var(--primary-color-Bright-Yellow);
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+.about {
+  color: var(--netural-color-Light-Gray);
+  font-size: 13px;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+footer {
+  display: flex;
+}
+.subscription {
+  width: 700px;
+  background-color: var(--primary-color-Cyan);
+  padding: 25px 25px;
+}
+
+.subscription p {
+  color: var(--netural-color-Light-Gray);
+  padding-top: 15px;
+}
+
+.subscription :first-child {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.price {
+  font-size: 10px;
+  opacity: 1;
+}
+
+.amount {
+  display: inline-block;
+  padding: 5px;
+  font-weight: 700;
+  opacity: 1;
+  font-size: 10px;
+}
+
+.btn {
+  display: flex;
+  width: 230px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.301);
+  border-radius: 5px;
+  background-color: var(--primary-color-Bright-Yellow);
+  margin: 20px;
+  margin-left: 0px;
+  padding: 10px 1px;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.btn p {
+  font-weight: 900;
+  font-size: 17px;
+  margin: 0;
+  padding: 0;
+}
+
+.btn:hover {
+  opacity: 0.7;
+  transition: 1s;
+}
+
+.whyUs {
+  background-color: var(--primary-color-Cyan);
+  opacity: 0.7;
+  padding: 25px 25px;
+  width: 700px;
+}
+
+.whyUs p {
+  color: var(--netural-color-Light-Gray);
+  padding-right: 100px;
+  line-height: 20px;
+  opacity: 0.8;
+}
+
+.whyUs :first-child {
+  font-size: 15px;
+  margin: 15px 0px;
+  opacity: 1;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 375px) {
+  main,
+  .subscription,
+  .whyUs,
+  .btn {
+    width: 100%;
+  }
+
+  .whyUs p {
+    padding-right: 5px;
+  }
+
+  footer {
+    display: block;
+  }
+}
